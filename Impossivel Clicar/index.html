@@ -9,23 +9,23 @@
 
 <body>
 
-    <img src="Captura de tela 2024-05-22 153723.png"></img>
+    <img src="imgs/front-end.png"></img>
     <h1
         style="color: rgb(255, 190, 26); font-size: 64px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; letter-spacing: 0.5px; font-weight: 400; translate: 0 -50px; text-shadow: 0 0 8px black;">
-        Olá, Najuzinha</h1>
+        Olá, Vinícius. </h1>
     <p
         style="color: white; font-size: 32px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; translate: 0 -55px; font-weight: 700; text-shadow: 0 0 6px black; text-align: center;">
-        Você poderia, por gentileza, <br> voltar pro Brasil?</p>
+        Você deseja parar de estudar <br>front-end? </p>
     <div class="botoes">
 
-        <a href="obrigado.html"><button id="pos" style="cursor: pointer;">CLARO, MEU MEU AMORZINHO</button></a>
+        <a href="obrigado.html"><button id="pos" style="cursor: pointer;">NÃO, DESISTIR JAMAIS!</button></a>
         <button id="neg"
-            style="background: linear-gradient(145deg, rgb(219, 5, 5), rgb(249, 65, 65)); box-shadow: 0 0 20px rgb(255, 0, 0);">NÃO,
-            EU SOU MALVADA</button>
-
+            style="background: linear-gradient(145deg, rgb(219, 5, 5), rgb(249, 65, 65)); box-shadow: 0 0 20px rgb(255, 0, 0);">SIM,
+            EU
+            DESISTO!</button>
     </div>
 
-    <img src="a-couple-in-love-xjrldsbgrajvnia7.jpg" class="imgwalppaper"></img>
+
 
 </body>
 
@@ -41,14 +41,18 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        background-color: black;
+        background: linear-gradient(to bottom, #ff7e5f, #feb47b);
         overflow: hidden;
+        height: 100vh;
+
     }
+
 
     img {
         width: 400px;
         height: auto;
-        margin-top: 80px;
+        overflow: hidden;
+
     }
 
     button {
@@ -80,7 +84,7 @@
     .imgwalppaper {
         position: absolute;
         width: 100vw;
-        height: 99%;
+        height: 100vh;
         z-index: -1;
         opacity: 0.4;
         margin-top: -15px;

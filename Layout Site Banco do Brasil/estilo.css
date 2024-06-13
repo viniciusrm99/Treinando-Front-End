@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #FCFC30;
+    --cor-secundaria: white;
+    --cor-terciaria: #465EFF;
+}
+
+body {
+    background-color: var(--cor-primaria);
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-secundaria);
+    color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(to right, #FCFC30 50%, #fcfc30f5);
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header h1 {
+    color: #465EFF;
+    margin-left: 50px;
+}
+
+main {
+    background-color: white;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+
+    display: flex;
+    justify-content: center;
+}
+
+footer .box-footer {
+    color: yellow;
+    background-color: var(--cor-terciaria);
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .box-footer span {
+    background-color: var(--cor-secundaria);
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+
+
+    border-radius: 50%;
+    border: 3px solid var(--cor-terciaria);
+
+    color: #465EFF;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main form {
+    width: 350px;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card label {
+    display: block;
+
+}
+
+.card input[type=text] {
+    border-top: 0;
+    border-bottom: 3px solid #cab734;
+    border-left: 0;
+    border-right: 0;
+    font-size: 16px;
+    height: 40px;
+    background-color: #f9e867;
+    padding-left: 15px;
+    width: 100%;
+
+}
+
+
+.card input[type=submit] {
+    background-color: #465EFF;
+    color: white;
+    font-size: 20px;
+    width: 230px;
+    height: 40px;
+    margin-left: 12px;
+}
+
+main .card {
+    padding: ;
+    background-color: #FCFC30;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card h2 {
+    font-size: 23px;
+    color: #465EFF;
+
+
+}

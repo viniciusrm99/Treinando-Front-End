@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --PrimeiraCor: #34751F;
+    --SegundaCor: #f1f1f1;
+    --TerceiraCor: #4FAC2E;
+    --QuartaCor: #969696;
+    --QuintaCor: ;
+
+    --tamanhoFontePequena: 10px;
+    --tamanhoFonteMedia: 15px;
+    --tamanhoFonteGrande: 30px;
+}
+
+body {
+    color: var(--SegundaCor);
+    background-color: gray;
+
+    font-size: var(--tamanhoFonteMedia);
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    min-width: 320px;
+    height: 100% display: flex;
+    flex-direction: column;
+
+}
+
+header {
+
+    background-color: var(--PrimeiraCor);
+    padding: 10px;
+    border-bottom: 5px solid var(--TerceiraCor);
+
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100vw;
+    min-width: 320px;
+    position: fixed;
+
+}
+
+.header-logo {
+    font-weight: bolder;
+    font-size: var(--tamanhoFonteMedia);
+
+}
+
+.header-logo p {
+    font-size: var(--tamanhoFonteGrande);
+    line-height: 20px;
+}
+
+.header-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+
+}
+
+.header-search input[type="text"] {
+    color: var(--QuartaCor);
+    border-radius: 50px;
+    border: 2px solid black;
+    height: 35px;
+    text-align: center;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-search input[type="text"]:focus {
+    outline: none;
+    font-weight: 700;
+    border: 2px solid #34751F;
+    box-shadow: 2px 2px 2px 2px #34751F;
+}
+
+.header-links ul {
+    font-size: var(--tamanhoFonteMedia);
+    font-weight: 700;
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.header-links ul li {
+    color: #f1f1f1;
+    margin-right: 10px;
+    background-color: #4FAC2E;
+    border-radius: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 30px;
+
+
+}
+
+.header-links ul li:hover {
+    color: #f1f1f1;
+    text-shadow: 2px 2px 3px black;
+    cursor: pointer;
+
+}
+
+.header-links ul li.botaoHeader {
+    background-color: #f1f1f1;
+    color: #4FAC2E;
+}
+
+.header-links ul li.botaoHeader:hover {
+    Color: var(--TerceiraCor);
+}
+
+main {
+    height: 900px;
+    background-color: white;
+    min-width: 320px;
+}
+
+
+footer {
+    background-color: var(--TerceiraCor);
+    min-width: 320px;
+
+}
+
+.footer-topo {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; */
+
+}
+
+.footer-logo {
+    font-size: 40px;
+    line-height: 45px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.footer-logo p {
+    font-size: 70px;
+    text-align: left;
+}
+
+.footer-links ul {
+    font-size: var(--tamanhoFonteMedia);
+    list-style: none;
+    padding-left: 25%;
+    padding: 20px
+}
+
+.footer-links ul li:hover {
+    text-shadow: 2px 2px 3px black;
+    cursor: pointer;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media (min-width: 300px) and (max-width:600px) {
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-logo {
+        font-weight: bolder;
+        font-size: var(--tamanhoFonteGrande);
+        margin-top: 10px;
+    }
+
+    .header-logo p {
+        font-size: 45px;
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+
+    .header-search {
+        width: 100%;
+    }
+
+    .header-search input[type="text"] {
+        color: var(--QuartaCor);
+        border-radius: 50px;
+        border: 2px solid black;
+        width: 100%;
+        height: 35px;
+        text-align: center;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .header-search input[type="text"]:focus {
+        outline: none;
+        font-weight: 700;
+        border: 2px solid #34751F;
+        box-shadow: 2px 2px 2px 2px #34751F;
+        margin-bottom: 20px;
+        width: 100px;
+    }
+}
+
+
+@media (min-width: 600px) {
+
+    .body {
+        width: 100%;
+
+    }
+}
+
+@media (min-width: 900px) {
+
+    body {
+        width: 100%;
+
+    }
+
+    header {
+        width: 100%;
+
+    }
+}
