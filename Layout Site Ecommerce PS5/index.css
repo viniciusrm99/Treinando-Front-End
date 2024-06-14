@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --PrimeiraCor: #000000;
+    --SegundaCor: #1a1a1a;
+    --TerceiraCor: #f9fcff;
+    --QuartaCor: #2e2e2e;
+
+    --tamanhoFontePequena: ;
+    --tamanhoFonteMedia: ;
+    --tamanhoFonteGrande: ;
+}
+
+
+body {
+    max-width: 1fr;
+    height: 100%;
+    background-image: url(imgs/Apple-September-Event-California-Streaming-BasicAppleGuy-iDownloadBlog-6K-No-Logo.png);
+
+    background-size: cover;
+    /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    /* Evita a repetição da imagem */
+    background-attachment: fixed;
+}
+
+.container {
+
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "h h h"
+        "a m m"
+        "a m m"
+        "a m m"
+        "f f f";
+}
+
+header {
+    position: fixed;
+    background-color: transparent;
+    grid-area: h;
+
+
+    width: 100%;
+    padding: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: .5s;
+
+
+}
+
+.header-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.header-links ul li {
+    display: inline-block;
+    margin-right: 40px;
+    list-style: none;
+    font-size: 20px;
+    padding-right: 50px;
+}
+
+.rolagem {
+    background: linear-gradient(to bottom, #1B3C59, #75728C);
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+main {
+    padding-top: 200px;
+    grid-area: m;
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+
+
+/* .wrapper-foto-ladoA {
+    list-style: none;
+    padding-top: 30px;
+    border-radius: 100%;
+
+}
+
+.wrapper-foto-ladoB ul {
+    list-style: none;
+    padding-top: 30px;
+} */
+
+.wrapper-foto-ladoA ul li {
+    list-style: none;
+    padding-top: 30px;
+
+}
+
+.wrapper-foto-ladoB ul li {
+    list-style: none;
+    padding-top: 30px;
+}
+
+.wrapper-foto-ladoA img {
+    border-radius: 3%;
+    box-shadow: 0 4px 8px #cba1c7;
+}
+
+
+
+.wrapper-foto-ladoB img {
+    border-radius: 3%;
+    box-shadow: 0 4px 8px #cba1c7;
+}
+
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 220px;
+    ;
+
+    grid-area: a;
+    width: 100%;
+
+
+}
+
+aside img {
+    border-radius: 3%;
+    box-shadow: 0 4px 8px #cba1c7;
+}
+
+footer {
+    margin-top: 70px;
+    grid-area: f;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
