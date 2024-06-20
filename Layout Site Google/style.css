@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --PrimeiraCor: #1a73e8;
+    --SegundaCor: #212121;
+    --TerceiraCor: #ffff;
+    --QuartaCor: ;
+    --QuintaCor: ;
+
+    --tamanhoFontePequena: ;
+    --tamanhoFonteMedia: ;
+    --tamanhoFonteGrande: ;
+}
+
+body {
+    background-color: var(--TerceiraCor);
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--SegundaCor);
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100vw;
+
+}
+
+header {
+
+    width: 100%;
+    background-color: var(--TerceiraCor);
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.topo {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.topo>div {
+    padding: 10px;
+}
+
+main {
+    font-weight: 400;
+    background-color: var(--TerceiraCor);
+    width: 75%;
+    max-width: 1200px;
+    margin: 70px auto;
+
+    height: 440px;
+    max-height: 100vh;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.barra-pesquisa {
+    margin: auto;
+    max-width: 638px;
+    min-width: 400px;
+
+}
+
+.barra-pesquisa textarea {
+
+    display: flex;
+    justify-content: center;
+    max-height: 44px;
+    min-height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+
+
+    font-family: Arial, Helvetica, sans-serif;
+    width: 638px;
+    max-width: auto;
+
+    @media (max-width: 900px) {
+        width: 100%;
+        /* Ocupa toda a largura disponível */
+        min-width: 100px;
+        /* Largura mínima */
+        max-width: 100%;
+        /* Não ultrapassa a largura do contêiner pai */
+    }
+}
+
+
+.links p {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    border-top: 1px solid #dadce0;
+    height: 20px;
+
+}
+
+@media (max-width: 780px) {
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* .footerB>p:nth-child(3) {
+        display: block;
+
+        color: #1a73e8; */
+
+
+}
+}
