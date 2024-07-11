@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --PrimeiraCor: rgb(190, 14, 14);
+    --SegundaCor: ;
+    --TerceiraCor: ;
+    --QuartaCor: ;
+    --QuintaCor: ;
+
+    --tamanhoFontePequena: ;
+    --tamanhoFonteMedia: ;
+    --tamanhoFonteGrande: ;
+}
+
+.bg-Cinza {
+    background-color: rgba(168, 165, 165, 0.57);
+}
+
+body {
+    background-color: gray;
+    font-size: ;
+    font-family: ;
+
+}
+
+main {}
+
+aside {}
+
+nav {
+    background-color: red;
+}
+
+footer {
+    background-color: green;
+}
+
+#link:hover {
+    background-color: #0D6EFD;
+    color: white;
+}
+
+.navbar-toggler:focus,
+.nav-link:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+li::marker {
+    content: '' !important;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+img {
+    border-radius: 100% !important;
+    width: 100%;
+}
