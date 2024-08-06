@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imgs/logo-guia.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorriso Net</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Concert+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <div class="top-bar bg-gray container-fluid bg-gradiente-header">
+        <div class="d-flex justify-content-center">
+            <a href="#" class="btn btn-pill bg-blue text-white pl-3">
+                <button type="button" class="btn btn-blue text-white fs-5 ps-4 pe-4 fw-bold">
+                    ASSINE JÁ
+                </button>
+
+            </a>
+        </div>
+    </div>
+    <header>
+        <div class="container-fluid">
+            <div class="HeaderIwrapper row">
+                <div class="logo col-6 d-flex align-items-end justify-content-lg-start ps-5 ">
+                    <a href="index.html">
+                        <img src="imgs/logo.jpg" style="width: 100px" class="" alt="" role="button"></a>
+                </div>
+                <div class="buscador d-flex align-items-end col-3">
+                    <form action="/search" method="GET" class="border-under input-group mb-2"> <button
+                            class="btn btn-outline-secondary border-0" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                        <input type="text" name="query" class="form-control border-0" placeholder="Digite sua pesquisa"
+                            aria-label="Pesquisar" required>
+                    </form>
+                </div>
+                <div class="headerWrapperTop col-3 d-flex justify-content-md-center align-items-end pb-2">
+                    <button type="button" class="button-login btn bg-blue text-white d-flex align-items-center">
+                        <a href="login.html" class="text-white text-decoration-none">Login
+                            <img src="imgs/biometrics.png" class="ps-2" style="width: 25px;" alt=""></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class=" bg-gray d-flex justify-content-md-center align-items-center row">
+                <div class="headerWrapperNavegacao bg-gray d-flex justify-content-md-center align-items-center row">
+                    <div class="menuOpcoes col-3 ps-5 h-100"> <img src="imgs/menu.png" style="width: 22px;" alt="">
+                    </div>
+                    <ul class="itens col-9 align-items-center d-flex justify-content-around list-unstyled h-100 ">
+                        <li class="nav-item hover-effect h-100 align-items-center d-flex ps-3 pe-3">ÁREA DO ASSINANTE
+                        </li>
+                        <li class=" nav-item hover-effect h-100 align-items-center d-flex ps-3 pe-3">PLANOS</li>
+                        <li class="nav-item hover-effect h-100 align-items-center d-flex ps-3 pe-3">GERENCIAMENTO</li>
+                        <li class=" nav-item hover-effect h-100 align-items-center d-flex ps-3 pe-3">FALE CONOSCO</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="inicio">
+        <div class="carousel-wrapper position-relative">
+            <div class="carousel-text">
+                <div class="animate__animated animate__backInDown animate__slower">
+                    <h2 class="text-shadow-default fs-m">CUIDE MELHOR DO SEU PROJETO</h2>
+                </div>
+            </div>
+            <div id="carouselMultipleColumns" class="carousel slide" data-ec-toggle="responsive-carousel"
+                data-ec-size="4">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center gap-0 m-0 p-0">
+                            <img src="imgs/carrosel-imagem (1).jpg" style="width: 100%; max-width: 640px;">
+                            <img src="imgs/carrosel-imagem (4).jpg" style="width: 100%; max-width: 640px;">
+                            <img src="imgs/carrosel-imagem (5).jpg" style="width: 100%; max-width: 640px;">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center gap-0 m-0 p-0">
+                            <img src="imgs/carrosel-imagem (2).jpg" style="width: 100%; max-width: 640px;">
+                            <img src="imgs/carrosel-imagem (3).jpg" style="width: 100%; max-width: 640px;">
+                            <img src="imgs/carrosel-imagem (6).jpg" style="width: 100%; max-width: 640px;">
+                        </div>
+                    </div>
+                </div> <a class="carousel-control-prev" href="#carouselMultipleColumns" role="button"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselMultipleColumns" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section id="serviços">
+        <div class="row container-fluid my-5">
+            <div class="col-4 p-0">
+                <div
+                    class="hover-effect-destacar cursor-pointer card d-flex justify-content-center flex-column align-items-center border-0 ">
+                    <div class="card-body d-flex justify-content-center flex-column align-items-center">
+                        <img src="imgs/chart-pie-alt.png" class="icon p-2" alt="">
+                        <h5 class="card-title text-center pt-3 text-secondary fw-bold ">CONTROLE FINANCEIRO</h5>
+                        <p class="card-text text-center p-2 text-blueTwo fw-medium"><span
+                                class="fw-bold text-pink">VISUALIZE </span> TODO O
+                            <span class="fw-bold text-pink">FLUXO
+                                FINANCEIRO</span> DA SUA CLÍNICA NO SEU SISTEMA
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 p-0">
+                <div
+                    class="hover-effect-destacar cursor-pointer card d-flex justify-content-center flex-column align-items-center border-0">
+                    <div class="card-body d-flex justify-content-center flex-column align-items-center">
+                        <img src="imgs/adicionar-usuario.png" class="icon p-2" alt="">
+                        <h5 class="card-title text-center pt-3 text-secondary fw-bold ">CAPTAÇÃO E VENDAS</h5>
+                        <p class="card-text text-center p-2 text-blueTwo fw-medium">
+                            <span class="fw-bold text-pink">ATRAIA</span> MAIS PACIENTES, <span
+                                class="fw-bold text-pink">AUMENTE</SPAN> SUAS
+                            VENDAS E <span class="fw-bold text-pink">CRESÇA</span> SEU PROJETO
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 p-0">
+                <div
+                    class="hover-effect-destacar cursor-pointer card d-flex justify-content-center flex-column align-items-center border-0">
+                    <div class="card-body d-flex justify-content-center flex-column align-items-center">
+                        <img src="imgs/grafico-histograma.png" class="icon p-2" alt="">
+                        <h5 class="card-title text-center pt-3 text-secondary fw-bold ">CONTROLE FINANCEIRO</h5>
+                        <p class="card-text text-center p-2 text-blueTwo fw-medium"> <span
+                                class="fw-bold text-pink">SIMPLIFIQUE </span> SUA GESTÃO
+                            E TOME <span class="fw-bold text-pink"> DECISÕES
+                            </span>
+                            EFICIENTES </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 container-fluid">
+            <div class="col-4 p-0">
+                <div
+                    class="hover-effect-destacar cursor-pointer card d-flex justify-content-center flex-column align-items-center border-0">
+                    <div class="card-body d-flex justify-content-center flex-column align-items-center">
+                        <img src="imgs/trofeu.png" class="icon p-2" alt="">
+                        <h5 class="card-title text-center pt-3 text-secondary fw-bold ">EXPERIÊNCIA INCRIVEL</h5>
+                        <p class="card-text text-center p-2 text-blueTwo fw-medium"> <span class="fw-bold text-pink">USE
+                            </span> TECNOLOGIA PARA
+                            <span class="fw-bold text-pink">ENCANTAR</span> E SE <span
+                                class="fw-bold text-pink">CONECTAR</span> COM SEUS PACIENTES
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 p-0">
+                <div
+                    class="hover-effect-destacar cursor-pointer card d-flex justify-content-center flex-column align-items-center border-0">
+                    <div class="card-body d-flex justify-content-center flex-column align-items-center">
+                        <img src="imgs/circulo-usd.png" class="icon p-2" alt="">
+                        <h5 class="card-title text-center pt-3 text-secondary fw-bold ">CONTABILIDADE EM DIA</h5>
+                        <p class="card-text text-center p-2 text-blueTwo fw-medium">
+                            <span class="fw-bold text-pink">AUTOMATIZE</span> PROCESSOS, <span
+                                class="fw-bold text-pink">EVITANDO</SPAN> ERROS E IMPOSTOS INDEVIDOS
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 p-0">
+                <div
+                    class="hover-effect-destacar cursor-pointer card d-flex justify-content-center flex-column align-items-center border-0">
+                    <div class="card-body d-flex justify-content-center flex-column align-items-center">
+                        <img src="imgs/grafico-histograma.png" class="icon p-2" alt="">
+                        <h5 class="card-title text-center pt-3 text-secondary fw-bold ">EQUIPE ENGAJADA</h5>
+                        <p class="card-text text-center p-2 text-blueTwo fw-medium"> <span
+                                class="fw-bold text-pink">OTIMIZE </span> PROCESSOS E TENHA UMA EQUIPE MAIS<span
+                                class="fw-bold text-pink"> ÁGIL
+                            </span> E <span class="fw-bold text-pink"> EFICIENTE
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="assine-ja">
+        <div class="bg-blue-two container-fluid d-flex justify-content-center align-items-center"
+            style="height: 200px;">
+            <h2
+                class="fs-2 text-shadow-two text-white animate__animated animate__backInLeft animate__slower text-center ">
+                EXISTE UMA
+                RESPOSTA EM NOSSO
+                SITE PARA CADA DESAFIO QUE SUA
+                CLINICA ENFRENTA</h2>
+        </div>
+        <div class="container-fluid bg-image d-flex justify-content-center align-items-center flex-column"
+            style="height: 500px;">
+            <button type="button" class="btn btn-light btn-w-500 rounded-pill h-25 mb-5 mt-5 "> <span
+                    class="text-white fs-0 fw-bold text-shadow-two">
+                    ASSINE JÁ </span>
+            </button>
+
+            <h2
+                class="fs-1 text-shadow-two text-white pt-5 animate__animated animate__backInLeft animate__slower text-center">
+                TESTE
+                NOSSO SOFTWARE POR <span
+                    class="text-pink text-shadow-three animate__animated animate__backInLeft animate__slower">UM MÊS
+                    GRÁTIS</span></h2>
+        </div>
+    </section>
+    <section id="feedbacks">
+        <div class="container mt-5">
+            <h2 class="text-center mb-1 pt-5 fs-1 fonte-darkBlue fw-bolder">FEEDBACKS</h2>
+            <div id="feedbackCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+                            <h5 class="text-center fs-4 fonte-darkBlue">Ótimo custo-beneficio!</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+                            <h5 class="text-center fs-4 fonte-darkBlue">Atendimento excelente e rápido.</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+                            <h5 class="text-center fs-4 fonte-darkBlue">Serviços tem uma qualidade incomparável!</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+                            <h5 class="text-center fs-4 fonte-darkBlue">O Software supriu todas as minhas necessidades!
+                            </h5>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+                            <h5 class="text-center fs-4 fonte-darkBlue">Super fácil de utilizar, recomendo!</h5>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#feedbackCarousel"
+                    data-bs-slide="prev">
+                    <img src="imgs/angulo-esquerdo.png" alt="Previous" style="width: 30px;">
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#feedbackCarousel"
+                    data-bs-slide="next">
+                    <img src="imgs/angulo-direito.png" alt="Next" style="width: 30px;">
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section id="perguntas">
+        <div class="container mt-1 mb-5">
+            <h2 class="text-center mb-5 pt-5 fs-1 fonte-darkBlue fw-bolder">PERGUNTAS FREQUENTES</h2>
+
+            <div class="text-start treinando-collapse btn h3 border-bottom fs-5 fonte-darkBlue w-100 fw-medium"
+                data-bs-toggle="collapse" data-bs-target="#resposta1">
+                EXISTEM CUSTOS ADICIONAIS ASSOCIADOS AO USO DO SOFTWARE?
+            </div>
+            <div id="resposta1" class="collapse p-3 fonte-darkBlue fs-P">
+                Não, não há custos adicionais associados ao uso do software. Tudo está incluso na sua assinatura mensal.
+            </div>
+
+            <div class="text-start treinando-collapse btn h3 border-bottom fs-5 fonte-darkBlue w-100 fw-medium"
+                data-bs-toggle="collapse" data-bs-target="#resposta2">
+                COMO FUNCIONA A IMPLEMENTAÇÃO DO SISTEMA EM RELAÇÃO A MIGRAÇÃO DE DADOS?
+            </div>
+            <div id="resposta2" class="collapse p-3 fonte-darkBlue fs-P">
+                Oferecemos suporte completo para a migração de dados, garantindo uma transição suave e sem problemas
+                para o nosso sistema.
+            </div>
+
+            <div class="text-start treinando-collapse btn h3 border-bottom fs-5 fonte-darkBlue w-100 fw-medium"
+                data-bs-toggle="collapse" data-bs-target="#resposta3">
+                COMO O SOFTWARE ODONTOLÓGICO VAI ME AJUDAR A SER UMA CLÍNICA MAIS LUCRATIVA?
+            </div>
+            <div id="resposta3" class="collapse p-3 fonte-darkBlue fs-P">
+                Nosso software oferece ferramentas de gestão eficientes que ajudam a otimizar agendamentos, reduzir
+                custos operacionais e melhorar a experiência do paciente.
+            </div>
+
+            <div class="text-start treinando-collapse btn h3 border-bottom fs-5 fonte-darkBlue w-100 fw-medium"
+                data-bs-toggle="collapse" data-bs-target="#resposta4">
+                PRECISO BAIXAR O SISTEMA PARA UTILIZÁ-LO?
+            </div>
+            <div id="resposta4" class="collapse p-3 fonte-darkBlue fs-P">
+                Não, o sistema é totalmente baseado em nuvem. Você pode acessá-lo de qualquer dispositivo com conexão à
+                internet.
+            </div>
+
+            <div class="text-start treinando-collapse btn h3 border-bottom fs-5 fonte-darkBlue w-100 fw-medium"
+                data-bs-toggle="collapse" data-bs-target="#resposta5">
+                POSSO CANCELAR MINHA ASSINATURA A QUALQUER MOMENTO?
+            </div>
+            <div id="resposta5" class="collapse p-3 fonte-darkBlue fs-P">
+                Sim, você pode cancelar sua assinatura a qualquer momento sem custos adicionais.
+            </div>
+        </div>
+    </section>
+    <footer>
+        <footer class="bg-dark-blue bg-gradiente text-white pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 mb-4">
+                        <img src="imgs/logo-sem-fundo.png" class="w-50" alt="">
+                    </div>
+
+                    <!-- Coluna 3 -->
+                    <div class="col-md-3 mb-4 mb-md-0">
+                        <h5>Serviços</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none">Consultoria</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Suporte Técnico</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Desenvolvimento</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 mb-4 mb-md-0">
+                        <h5>Entre em Contato</h5>
+                        <p><a href="tel:+5511991053323" class="text-white text-decoration-none"> <img
+                                    src="imgs/whatsapp.png" class="pe-2" style="width: 25px;" alt="">+55 (11)
+                                99105-3323</a></p>
+                        <p><a href="tel:+5511991053323" class="text-white text-decoration-none"> <img
+                                    src="imgs/whatsapp.png" class="pe-2" style="width: 25px;" alt="">+55 11
+                                95828-0400 </a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 mb-4 mb-md-0">
+                        <h5>Conheça os Fundadores</h5>
+                        <ul class="list-unstyled">
+                            <li>Gabriel Dantas</li>
+                            <li>Matheus Leite</li>
+                            <li>Vinícius Reis Miranda</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center py-3">
+                    <p class="mb-0">&copy; Sorriso Net. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cell-size: 150px;
+}
+
+body {
+    font-size: 30px;
+}
+
+.end {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+h1,
+h2,
+h3 {
+    text-shadow: 0px 0px 10px red;
+    color: white !important;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 0 5px 5px -5px red;
+}
+
+.linha {
+    box-shadow: 0 5px 5px -5px red;
+}
+
+.linha-top {
+    box-shadow: 0 -5px 5px -5px red;
+}
+
+.linha-all {
+    box-shadow: 5px 5px 5px 5px red;
+}
+
+.text-decoration-none {
+    text-decoration: none !important;
+}
+
+.formatation {
+    text-shadow: 0px 0px 10px red;
+    font-size: 1.4rem !important;
+    color: white !important;
+    font-family: 'Press Start 2P', cursive !important;
+    text-shadow: 0 5px 5px -5px red;
+}
+
+.formatation:hover {
+    color: red !important;
+}
+
+#games button {
+    max-width: 100px;
+
+}
+
+.display-none {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.board {
+    border-collapse: collapse;
+    /* Une as bordas das células */
+    margin-top: 20px;
+    /* Margem superior para espaçamento */
+}
+
+.cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 1px solid red;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.cell:hover {
+    background-color: rgba(42, 38, 38, 0.363);
+    /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para remover as bordas externas das primeiras e últimas células de cada linha */
+
+.board tr:first-child .cell {
+    border-top: none;
+    /* Remove a borda superior da primeira linha */
+}
+
+.board tr:last-child .cell {
+    border-bottom: none;
+    /* Remove a borda inferior da última linha */
+}
+
+.board tr td:first-child {
+    border-left: none;
+    /* Remove a borda esquerda da primeira coluna */
+}
+
+.board tr td:last-child {
+    border-right: none;
+    /* Remove a borda direita da última coluna */
+}
+
+.markO {
+    background-image: url(imagens/teste\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Evita a repetição da imagem */
+    background-position: center;
+    /* Centraliza a imagem */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    font-size: 0;
+    /* Esconde qualquer texto dentro da célula */
+}
+
+.markX {
+    background-image: url(imagens/teste\ \(2\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Evita a repetição da imagem */
+    background-position: center;
+    /* Centraliza a imagem */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    font-size: 0;
+    /* Esconde qualquer texto dentro da célula */
+}
+
+.game-end-message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(12, 12, 12, 0.954);
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .formatation {
+        font-size: 0.9rem !important;
+    }
+}

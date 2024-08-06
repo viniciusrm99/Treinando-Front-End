@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="jogos.css">
+    <link rel="shortcut icon" href="icones/ico.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+</head>
+
+<body class="bg-black">
+    <header id="titulo" class="nav container d-flex justify-content-center linha pt-5 ">
+        <div class=" wrapper-header header d-flex justify-content-between container">
+            <a href="jogo-da-velha.html" class="d-flex align-items-center text-decoration-none">
+                <h1 class="formatation m-0 d-flex align-items-center">JOGO DA VELHA</h1>
+            </a>
+            <button class="btn p-0 m-0 formatation" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">REGRAS</button>
+        </div>
+        <div class=" linha-all offcanvas offcanvas-bottom " tabindex="-1" id="offcanvasBottom"
+            aria-labelledby="offcanvasBottomLabel" aria-modal="true" role="dialog">
+            <div class="d-flex justify-content-center flex-column offcanvas-header">
+                <h5 class=" text-center offcanvas-title" id="offcanvasBottomLabel">Regras do Jogo</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="text-center offcanvas-body small">
+                No jogo da velha, dois jogadores se enfrentam em um tabuleiro 3x3. Um jogador marca com "X" e o
+                outro com "O". Eles alternam turnos, colocando suas marcas em células vazias. O objetivo é formar
+                uma linha contínua de três marcadores da mesma forma - horizontalmente, verticalmente ou
+                diagonalmente. O jogo termina quando um jogador completa uma linha ou quando todas as células são
+                preenchidas sem formar uma linha completa. O jogador que primeiro completar uma linha é o vencedor.
+                Se todas as células forem preenchidas sem um vencedor, o jogo termina em empate.
+            </div>
+        </div>
+        </div>
+
+    </header>
+    <main class="container ">
+
+        <section id="games" class=" container d-flex justify-content-center pt-5">
+            <table id="table-games" class=" container d-flex justify-content-center pt-5 mt-5">
+                <tbody>
+                    <tr>
+                        <td class="td-align d-flex flex-column justify-content-center">
+                            <img class="container" src="imagens/player-one.png">
+                            <br>
+                            <input class="container border-3 border-danger" id="player-one" type="text" maxlength="10"
+                                placeholder="Digite o nome do player1" class="bg-black">
+                        </td>
+                        <td class="td-align">
+                            <img class="container" id="btn-start" src="imagens/start.png">
+                        </td>
+                        <td class="td-align d-flex flex-column justify-content-center">
+                            <img class="container" src="imagens/player-two.png">
+                            <br>
+                            <input class="container border-3 border-danger" id="player-two" type="text" maxlength="10"
+                                placeholder="Digite o nome do player2">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table id="table-game-validated"
+                class="board text-center align-items-center justify-content-center container display-none text-center">
+                <tbody>
+                    <tr class="board">
+                        <td id="cell0" class="cell"></td>
+                        <td id="cell1" class="cell"></td>
+                        <td id="cell2" class="cell"></td>
+
+                    </tr>
+                    <tr class="board">
+                        <td id="cell3" class="cell"></td>
+                        <td id="cell4" class="cell"></td>
+                        <td id="cell5" class="cell"></td>
+
+                    </tr class="board">
+                    <tr>
+                        <td id="cell6" class="cell"></td>
+                        <td id="cell7 " class=" cell"></td>
+                        <td id="cell8 " class=" cell"></td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="jogador-vez" class="pt-5 container d-flex justify-content-center flex-column text-center">
+            <h2 class="fs-4"> Clique no botão acima para começar! </h2>
+            <h3 class="fs-5">Boa sorte! <span class=" ft-5 text-danger">;)</span></h3>
+        </section>
+    </main>
+    <div class="show game-end-message display-none justify-content-center align-items-center flex-column gap-5"
+        id="gameEndElement">
+        <div class="text-center formatation data-game-end-message">O vencedor foi o:</div>
+        <button class="btn btn-danger" id="restartButton">Reiniciar</buttonid>
+    </div>
+
+    <footer class="container linha-top formatation text-center pt-5 mt-5">
+        <p>© Direitos Reservados</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+
+
+}
+
+.wrapper-header {
+    box-shadow: 0 5px 5px -5px red;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 15px;
+}
+
+nav .infos {
+    display: flex;
+    justify-content: end;
+
+}
+
+ul {
+    display: flex;
+    margin-right: 10%;
+    flex-direction: row;
+    justify-content: ;
+    text-align: center;
+    align-items: center;
+    text-shadow: 0px 0px 5px red;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    border-right: 1px solid white;
+    padding: 0px 30px;
+}
+
+ul li:hover {
+    text-shadow: 0px 0px 5px white;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 60px 30px;
+    font-size: 13px;
+
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+    align-items: center;
+    width: 320px;
+}
+
+.logo img {
+    max-width: 70px;
+    width: 100%;
+    box-shadow: 0px 0px 20px red;
+    border-radius: 50%;
+}
+
+.logo img:hover {
+    box-shadow: 0px 0px 20px red;
+    border-radius: 50%;
+    transform: scale(1.3);
+}
+
+.logo p {
+    color: red;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 6px;
+}
+
+.logo p:hover {
+    font-size: 45px;
+    text-shadow: 2px 2px 5px black;
+}
+
+h1 {
+    text-shadow: 0px 0px 10px red;
+    color: white;
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 0px 3px red;
+}
+
+h2,
+{
+text-shadow: 0px 0px 10px red;
+color: white;
+font-size: 1.0em;
+;
+
+}
+
+.logo-texto {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    width: 100%;
+}
+
+main {
+    background-color: black;
+    color: white;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-fundo {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+section #catalogo {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.logo-fundo img {
+    display: flex;
+    border-radius: 50%;
+    height: 80px;
+    box-shadow: 0px 0px 10px red;
+    padding: 5px;
+}
+
+.logo-fundo img:hover {
+    transform: scale(1.3);
+}
+
+footer {
+    background-color: black;
+    height: 40px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+    height: 35px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: red;
+}
+
+.descricao {
+    display: flex;
+    padding: 20px 40px;
+}
+
+.jogos img {
+    padding-top: 2000px;
+    display: flex;
+    margin: 0 auto;
+    padding: 15px 35px;
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    max-height: 400px;
+    border-radius: 60px;
+}
+
+
+p {
+    text-shadow: 0px 2px red;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.jogos p {
+    text-align: center;
+    padding: 25px 0px;
+    box-shadow: 0px 2px 0 red;
+}
+
+#sobrenos p {
+    height: 100%;
+    padding: 20px 40px;
+    text-align: center;
+    text-shadow: 2px 2px 5px 5px red;
+    line-height: 40px;
+
+}
+
+#sobrenos {
+    height: 100%;
+    text-align: center;
+    padding: 20px 40px;
+    text-shadow: 0px 1px red;
+    line-height: 40px;
+
+}
+
+#forca {
+    text-align: center;
+    padding: 20px 40px;
+    line-height: 30px;
+}
+
+#descricao h1 {
+    padding: 20px 35px;
+    text-shadow: 0px 3px red;
+}
+
+#descricao {
+    text-align: center;
+    padding: 20px 40px;
+    line-height: 30px;
+}
+
+#quiz {
+    text-align: center;
+    padding: 20px 40px;
+    line-height: 30px;
+}
+
+.logos-habilidades {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.logos-habilidades img {
+    display: flex;
+    height: 60px;
+}
+
+
+footer {
+    background-color: black;
+    padding: 5px 10px;
+    height: 70px;
+    box-shadow: 2px 2px 5px 5px red;
+    text-align: center;
+    padding-top: 50px;
+}
+
+footer p {
+    color: white;
+}
