@@ -1,108 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início da Segunda temporada</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+            overflow: hidden;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        img {
+            width: 80%;
+            max-width: 350px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: rgb(255, 190, 26);
+            font-size: clamp(32px, 8vw, 64px);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: 0 0 8px black;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: white;
+            font-size: clamp(18px, 5vw, 32px);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 700;
+            text-shadow: 0 0 6px black;
+            margin-bottom: 30px;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        button {
+            width: 220px;
+            background-color: black;
+            color: white;
+            height: 50px;
+            font-weight: bold;
+            font-size: 16px;
+            background: linear-gradient(145deg, rgb(13, 60, 190), rgb(22, 123, 231));
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgb(12, 76, 196);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        #pos:hover {
+            transform: scale(1.15);
+            box-shadow: 0 0 60px rgb(1, 90, 255);
+            transition: 0.5s;
+        }
+
+        #neg {
+            background: linear-gradient(145deg, rgb(219, 5, 5), rgb(249, 65, 65));
+            box-shadow: 0 0 20px rgb(255, 0, 0);
+        }
+
+        @media (max-width: 600px) {
+            .botoes {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            button {
+                width: 80%;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <img src="LUISA.jpg" style="width: 300px; border-radius: 20px; margin-top: 40px;" alt="Luisa">
-    <h1
-        style="color: rgb(255, 190, 26); font-size: 64px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; letter-spacing: 0.5px; font-weight: 400; translate: 0 -50px; text-shadow: 0 0 8px black;">
-        Olá, Luisa </h1>
-    <p
-        style="color: white; font-size: 32px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; translate: 0 -55px; font-weight: 700; text-shadow: 0 0 6px black; text-align: center;">
-        Aceita ir pra um date comigo no dia<br> 31.10</p>
-    <div class="botoes">
+    <img src="LUISA.jpg" alt="Luisa">
+    <h1>Olá, Luisa 💛</h1>
+    <p>Aceita ir pra um date comigo no dia<br><span style="color: rgb(255, 190, 26);">31/10</span>?</p>
 
-        <a href="obrigado.html"><button id="pos" style="cursor: pointer;">SIM, EU TOPO!</button></a>
-        <button id="neg"
-            style="background: linear-gradient(145deg, rgb(219, 5, 5), rgb(249, 65, 65)); box-shadow: 0 0 20px rgb(255, 0, 0);">NÃO, SOMOS SÓ AMIGOS!</button>
+    <div class="botoes">
+        <a href="obrigado.html">
+            <button id="pos">SIM, EU TOPO!</button>
+        </a>
+        <button id="neg">NÃO, SOMOS SÓ AMIGOS!</button>
     </div>
 
+    <script>
+        const botao = document.querySelector('#neg');
 
+        botao.addEventListener("mouseover", function () {
+            const larguraTela = window.innerWidth;
+            const alturaTela = window.innerHeight;
+
+            // Evita que o botão fuja pra fora da tela no celular
+            const moveX = Math.random() * (larguraTela / 2) - (larguraTela / 4);
+            const moveY = Math.random() * (alturaTela / 3) - (alturaTela / 6);
+
+            botao.style.transform = `translate(${moveX}px, ${moveY}px)`;
+        });
+    </script>
 
 </body>
 
 </html>
-
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-    }
-
-    body {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        background: linear-gradient(to bottom, #ff7e5f, #feb47b);
-        overflow: hidden;
-        height: 100vh;
-
-    }
-
-
-    img {
-        width: 400px;
-        height: auto;
-        overflow: hidden;
-
-    }
-
-    button {
-        width: 250px;
-        background-color: black;
-        color: white;
-        height: 50px;
-        font-weight: bold;
-        font-size: 16px;
-        background: linear-gradient(145deg, rgb(13, 60, 190), rgb(22, 123, 231));
-        border: none;
-        box-shadow: 0 0 20px rgb(12, 76, 196);
-        transition: 0.3s;
-    }
-
-    #pos:hover {
-        transform: scale(1.2);
-        box-shadow: 0 0 60px rgb(1, 90, 255);
-        transition: 0.5s;
-    }
-
-    .botoes {
-        display: flex;
-        justify-content: center;
-        gap: 2rem;
-        margin-top: -30px;
-    }
-
-    .imgwalppaper {
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        z-index: -1;
-        opacity: 0.4;
-        margin-top: -15px;
-        margin-bottom: -15px;
-
-    }
-</style>
-
-<script>
-
-    const botao = document.querySelector('#neg');
-
-    let moveX = 0;
-    let moveY = 0;
-
-    botao.addEventListener("mouseover", function () {
-        moveX = (Math.random() * 801 - 400); //gera um número entre -400 e 400 para atribuir ao movimento no eixo X do botão (esse valor é ideal pro botão não sumir da tela nessas proporções desse código, mas pode mudar conforme você faça sua tela)
-        moveY = (Math.random() * 401 - 400); //aqui é o mesmo esquema de random, mas é de -400 a 0, respeitando o valor pra não sumir da tela, que acaba tendo um limite diferente do eixo X
-
-        botao.style.transform = `translate(${moveX}px, ${moveY}px)`; //atribui os valores randomicos ao botão aplicando um translate no css dele
-    })
-
-</script>
